@@ -1,0 +1,17 @@
+.tz-redpoint {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  overflow: visible;
+
+  transform: translate(5px, -10px);
+  &:before {
+    content: '';
+    display: inline-block;
+    background-color: #fb4e21;
+    height: 8px;
+    width: 8px;
+    border-radius: 4px;
+  }
+}

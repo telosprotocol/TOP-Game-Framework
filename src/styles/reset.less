@@ -1,0 +1,75 @@
+//
+html {
+  /* prettier-ignore */
+  font-size: 16PX;
+  font-size: 4.444444444444445vw;
+  line-height: 1.4; //BASEREMPX
+  // font-size: 10vw;
+}
+@media (orientation: portrait) {
+  html {
+    font-size: 4.444444444444445vw;
+  }
+}
+@media (orientation: landscape) {
+  html {
+    font-size: 4.444444444444445vh;
+  }
+}
+html,
+body {
+  height: 100%;
+  padding: 0;
+  font-family: Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, SimSun, sans-serif;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+img,
+video {
+  //   tailwind
+  display: inline-block;
+}
+
+/**
+ *       css
+ */
+
+input,
+textarea,
+select {
+  vertical-align: middle;
+  -webkit-user-select: auto;
+  user-select: none;
+  -webkit-touch-callout: auto;
+}
+
+ib {
+  display: inline-block;
+  vertical-align: middle;
+}
+button {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+  background-color: transparent;
+}
+#app {
+  position: relative;
+  max-width: 360px;
+  margin: 0px auto;
+}
+.van-toast {
+  .van-toast__text {
+    word-break: break-word;
+  }
+}

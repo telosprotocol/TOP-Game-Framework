@@ -1,0 +1,23 @@
+{
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "./src/libs",
+    "public_online"
+  ],
+  "compilerOptions": {
+    "baseUrl": "./",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  "vueCompilerOptions": {
+    "target": 2
+  }
+}

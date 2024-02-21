@@ -1,0 +1,25 @@
+@import './motion.less';
+@import './ellipsis.less';
+@import './clearfix.less';
+@import './img.less';
+@import './link.less';
+@import './shadow.less';
+@import './button.less';
+.box(@position: absolute) {
+  position: @position;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+// Sizing shortcuts
+
+.size(@width; @height) {
+  width: @width;
+  height: @height;
+}
+
+.square(@size) {
+  .size(@size; @size);
+}

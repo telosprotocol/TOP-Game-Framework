@@ -1,0 +1,25 @@
+// https://juejin.im/post/6844903529098772494
+.ellipsis() {
+  // white-space: normal;
+  // word-break: keep-all;
+  // word-wrap: break-word;
+  // text-overflow: ellipsis;
+  // overflow: hidden;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.ellipsis-mult(@n: 3) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @n;
+  word-break: keep-all;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.nowrap() {
+  white-space: nowrap;
+}

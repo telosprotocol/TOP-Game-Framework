@@ -1,0 +1,196 @@
+/*
+    ，  +    
+*/
+@import '~@/styles/utils.less';
+
+/**
+*      :
+* tz-btn
+* tz-btn-icon
+* .tz-btn-primary/tz-btn-disabled、tz-btn-secondary
+
+
+
+*/
+
+// //   button      div
+.btn-reset {
+  padding: 0;
+  line-height: inherit;
+}
+
+//
+.tz-touchable {
+  transition: opacity 0.3s;
+  &:active {
+    opacity: @feedbackOpacity;
+  }
+}
+
+// button
+.tz-btn,
+.tz-btn-icon {
+  line-height: 1.4;
+  .btnInlineCenter();
+  &:active {
+    opacity: @feedbackOpacity;
+  }
+}
+
+//
+.tz-btn {
+  .btnSmall();
+  /* prettier-ignore */
+  font-size: 14PX;
+  border-radius: 6px;
+}
+//
+.tz-btn-icon {
+  .btnMedium();
+  width: 30px;
+  padding: 0;
+  /* prettier-ignore */
+  font-size: 23PX;
+  background: #fff;
+  border-radius: 100px;
+  &--dark {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+.tz-btn-img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+.tz-btn-orange {
+  color: #f7bf0a;
+  background: #fff7db;
+  &.disabled {
+    color: #999;
+    background-color: #f2f2f2;
+  }
+}
+.tz-btn-text {
+  color: #f7bf0a;
+}
+
+.tz-btn-primary,
+.tz-btn-disabled,
+.tz-btn-secondary {
+  font-weight: 500;
+  /* prettier-ignore */
+  font-size: 14PX;
+
+  font-family: Roboto-Medium, Roboto;
+  line-height: 1.4;
+  border-radius: 6px;
+  .btnInlineCenter();
+  .btnSmall();
+}
+button.tz-btn-primary,//     tailwind reset 
+.tz-btn-primary {
+  color: #333;
+  background: @primaryColor;
+
+  &:active {
+    background: #ffc200;
+    opacity: 1;
+  }
+}
+
+.tz-btn-secondary {
+  color: @primaryTextColor;
+  background: #fff0db;
+  border: 1px solid @primaryTextColor;
+
+  &:active {
+    color: #f49c1c;
+    background: #f8d8ad;
+  }
+}
+.tz-btn-disabled {
+  color: #fff;
+  background: #dddddd;
+
+  &:active {
+    color: #fff;
+    background: #dddddd;
+  }
+}
+
+//      button
+.tz-btn-block,
+.tz-btn-pblock {
+  .btnBlockCenter();
+  .btnLarge();
+}
+
+.tz-btn-pblock {
+  color: #333;
+  font-weight: 500;
+
+  /* prettier-ignore */
+  font-size: 16PX;
+
+  font-family: Roboto-Medium, Roboto;
+  text-align: center;
+  background: #ffd039;
+  border-radius: 6px;
+  &:active {
+    background: #ffc200;
+  }
+  &.disabled {
+    color: #ffd039;
+    background-color: #fff7db;
+  }
+}
+
+//
+.tz-btn {
+  //
+  &--sm {
+    //
+    .btnSmall();
+  }
+  &--md {
+    .btnMedium();
+  }
+  &--lg {
+    .btnLarge();
+  }
+  //
+  &--loading {
+    position: relative;
+    &:before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      display: block;
+      background: #fff;
+      border-radius: inherit;
+      opacity: 0.35;
+      // -webkit-transition: opacity .2s;
+      // transition: opacity .2s;
+      content: '';
+      pointer-events: none;
+    }
+  }
+
+  //
+  &--round {
+    border-radius: 100px;
+  }
+
+  // .tz-btn-gloss {
+  //   box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 0px,
+  //     inset rgba(255, 255, 255, 0.25) 0px 1px 0px,
+  //     inset rgba(0, 0, 0, 0.25) 0px 0px 0px,
+  //     inset rgba(255, 255, 255, 0.03) 0px 20px 0px,
+  //     inset rgba(0, 0, 0, 0.15) 0px -20px 20px,
+  //     inset rgba(255, 255, 255, 0.05) 0px 20px 20px;
+  // }
+}

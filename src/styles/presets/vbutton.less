@@ -1,0 +1,149 @@
+//
+.vbtn {
+  // middle btn
+  // able if user set flex
+  align-items: center;
+  // able for user set flex
+  justify-content: center;
+  height: 48px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: Roboto-Bold, Roboto;
+  background-clip: padding-box;
+  border: 20px solid transparent;
+  border-top-width: 4px;
+  border-bottom-width: 11px;
+  border-image-slice: 8 40 22 40 fill;
+  border-image-repeat: stretch;
+
+  &--lg {
+    padding-bottom: 2px;
+    font-size: 21px;
+  }
+  &--sm {
+    height: 28px;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: Roboto-Medium, Roboto;
+
+    border: 13px solid transparent;
+    border-top-width: 3px;
+    border-bottom-width: 6px;
+    border-image-slice: 8 48 22 48 fill;
+  }
+  &--primary {
+    color: #1984ab;
+    text-shadow: 0px 1px 0px rgba(160, 250, 251, 0.5);
+    border-image-source: url('~@/assets/gameCommon/btn/btnPrimary.png');
+  }
+  &--yellow {
+    color: #ab5619;
+    text-shadow: 0px 1px 0px rgba(247, 235, 137, 0.5);
+    border-image-source: url('~@/assets/gameCommon/btn/btnYellow.png');
+  }
+  &--green {
+    color: #128e6f;
+    text-shadow: 0px 1px 0px rgba(160, 251, 226, 0.5);
+    border-image-source: url('~@/assets/gameCommon/btn/btnGreen.png');
+  }
+  &--danger {
+    color: #ab2b19;
+    text-shadow: 0px 1px 0px rgba(160, 251, 226, 0.5);
+    border-image-source: url('~@/assets/gameCommon/btn/btnDanger.png');
+  }
+  &:disabled,
+  &--disable {
+    color: #85769a;
+    text-shadow: 0px 1px 0px rgba(247, 246, 245, 0.5);
+    border-image-source: url('~@/assets/gameCommon/btn/btnDisable.png');
+  }
+}
+
+*,
+::before,
+::after {
+  --tz-v-button-color-from: #ba89e9;
+  --tz-v-button-color-to: #9c68cc;
+  --tz-v-button-stroke-color: #8147ae;
+  --tz-v-button-border-color: #a16dd1;
+}
+
+.vbutton {
+  position: relative;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+  font-style: italic;
+  background: linear-gradient(
+    180deg,
+    var(--tz-v-button-color-from) 0%,
+    var(--tz-v-button-color-to) 100%
+  );
+  border: 1px soild var(--tz-v-button-border-color);
+  border-radius: 15px;
+  border-radius: 15px;
+  box-shadow: 0 3px 0 var(--tz-v-button-border-color);
+  -webkit-text-stroke: 1.5px var(--tz-v-button-stroke-color);
+  &::before {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    left: 2%;
+    height: 40%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+    content: ' ';
+  }
+}
+.vbutton--red {
+  --tz-v-button-color-from: #f8693b;
+  --tz-v-button-color-to: #d43024;
+  --tz-v-button-stroke-color: #ae4747;
+  --tz-v-button-border-color: #c65252;
+}
+
+.vbutton--green {
+  --tz-v-button-color-from: #b3ffa0;
+  --tz-v-button-color-to: #18a82f;
+  --tz-v-button-stroke-color: #18a72e;
+  --tz-v-button-border-color: #31c324;
+}
+
+.vbutton:disabled,
+.vbutton-disabled {
+  opacity: 0.5;
+}
+
+.vbutton:disabled.active\:scale-95 {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+}
+// input.vplaceholder::-webkit-input-placeholder {
+//   color: var(--tz-v-placeholder-color);
+// }
+
+.vbtn-topup {
+  width: 130px;
+  height: 38px;
+  padding-bottom: 4.5px;
+  color: #1b6a14;
+  font-weight: bold;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'Font-Rubik';
+  text-shadow: 0px 0.5px 0px #a0dc08;
+  background-image: url('~@/assets/gameCommon/btnRecharge.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  &--disabled {
+    color: #85769a;
+    text-shadow: 0px 0.5px 0px #fff;
+    background-image: url('~@/assets/gameCommon/btnRechargeGrey.png');
+  }
+}

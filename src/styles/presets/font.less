@@ -1,0 +1,225 @@
+@import '~@/styles/utils.less';
+
+.robot {
+  font-family: Roboto;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular'; /* Project id 2150336 */
+  src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Medium'; /* Project id 2150336 */
+  src: url('./fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Bold'; /* Project id 2150336 */
+  src: url('./fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+}
+/*       ，      ，    */
+.robot-regular {
+  font-weight: 400;
+  font-family: Roboto-Regular, Roboto;
+}
+.robot-medium {
+  font-weight: 500;
+  font-family: Roboto-Medium, Roboto;
+}
+.robot-bold {
+  font-weight: 700;
+  font-family: Roboto-Bold, Roboto;
+}
+
+//---------------rubik-xx      ，   font-rubik-----------------
+
+@font-face {
+  font-family: 'Font-Rubik-Italic';
+  src: url('./fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf')
+    format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Font-Rubik';
+  src: url('./fonts/Rubik/Rubik-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
+}
+// @font-face {
+//   font-family: 'Sansita';
+//   src: url('./fonts/SansitaOne/SansitaOne.ttf') format('truetype');
+//   font-display: swap;
+// }
+.font-rubik {
+  font-family: 'Font-Rubik';
+}
+
+.font-rubik-italic {
+  font-family: 'Font-Rubik-Italic';
+}
+
+/**
+*    font-rubik font-medium
+*/
+.rubik-medium {
+  font-weight: 500;
+  font-family: 'Font-Rubik';
+}
+
+/**
+*    font-rubik font-bold
+*/
+.rubik-bold {
+  font-weight: bold;
+  font-family: 'Font-Rubik';
+}
+
+/**
+*    font-rubik font-black
+*/
+.rubik-black {
+  font-weight: 900;
+  font-family: 'Font-Rubik';
+}
+
+// thin:      。      ：100。
+// extralight:       。      ：200。
+// light:     。      ：300。
+// regular   normal:      ，         。      ：400。
+// medium:      。      ：500。
+// semibold:      。      ：600。
+// bold:     。      ：700。
+// extrabold:       。      ：800。
+// black:      ，    extra-bold，         。      ：900。
+.vshadow-stroke {
+  text-shadow: -1px -1px 0 var(--tw-shadow-color),
+    1px -1px 0 var(--tw-shadow-color), -1px 1px 0 var(--tw-shadow-color),
+    1px 1px 0 var(--tw-shadow-color);
+}
+.vshadow-stroke-1\.5 {
+  text-shadow: -1.5px -1.5px 0 var(--tw-shadow-color),
+    1.5px -1.5px 0 var(--tw-shadow-color), -1.5px 1.5px 0 var(--tw-shadow-color),
+    1.5px 1.5px 0 var(--tw-shadow-color);
+}
+
+.vshadow-stroke-0\.5 {
+  text-shadow: -0.5px -0.5px 0 var(--tw-shadow-color),
+    0.5px -0.5px 0 var(--tw-shadow-color), -1px 1px 0 var(--tw-shadow-color),
+    0.5px 0.5px 0 var(--tw-shadow-color);
+}
+.vshadow-stroke-2 {
+  text-shadow: -2px -2px 0 var(--tw-shadow-color),
+    2px -2px 0 var(--tw-shadow-color), -2px 2px 0 var(--tw-shadow-color),
+    2px 2px 0 var(--tw-shadow-color);
+}
+.vstroke {
+  -webkit-text-stroke: var(--tw-stroke-width) var(--tw-stroke-color);
+}
+
+//==bg-gradient-to-b bg-clip-text text-transparent from-[#C32907] to-[#901203]
+.vgradient-text,
+.vgradient-text-outline {
+  --v-color-from: #ffff44;
+  --v-color-to: #fdce25;
+  --v-background: linear-gradient(
+    180deg,
+    var(--v-color-from) 0%,
+    var(--v-color-to) 100%
+  );
+  color: var(--v-color-from);
+  background: var(--v-background);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.vgradient-text {
+  --v-color-from: #ffff44;
+  --v-color-to: #fdce25;
+  color: var(--v-color-from);
+  background: linear-gradient(
+    180deg,
+    var(--v-color-from) 0%,
+    var(--v-color-to) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/**
+*     +  （ ：      relative+z-0,     data-text)
+*/
+.vgradient-text-outline {
+  --v-shadow-from: #cd5a11;
+  --v-shadow-to: #cd5a11;
+  --v-shadow-y: 2px;
+  --v-shadow-x: -2px;
+
+  &--yellow {
+    --v-color-from: #ffffd0;
+    --v-color-to: #f9d771;
+    --v-shadow-from: #cc3900;
+    --v-shadow-to: #cc3900;
+    --v-shadow-y: 3px;
+    --v-shadow-x: 0;
+  }
+
+  &:before {
+    position: absolute;
+    // left: 0;
+    // right: 0;
+    // top: 0;
+    // bottom: 0;
+    z-index: -1;
+
+    color: var(--v-shadow-from);
+    background: linear-gradient(
+      180deg,
+      var(--v-shadow-from) 0%,
+      var(--v-shadow-to) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    transform: translate(var(--v-shadow-x), var(--v-shadow-y));
+    content: attr(data-text);
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+//   +
+
+//           ，
+// @font-face {
+//   font-family: 'Font-pj-Sans-Italic';
+//   src: url('./fonts/Plus_Jakarta_Sans/PlusJakartaSans-Italic-VariableFont_wght.ttf')
+//     format('truetype');
+// }
+// @font-face {
+//   font-family: 'Font-pj-Sans';
+//   src: url('./fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf')
+//     format('truetype');
+// }
+// .font-pjsans {
+//   font-family: 'Font-pj-Sans';
+// }
+// .font-pjsans-italic {
+//   font-family: 'Font-pj-Sans-Italic';
+// }
+
+//         ，
+// @font-face {
+//   font-family: 'Font-OpenSans';
+//   src: url('./fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf')
+//     format('truetype');
+// }
+// @font-face {
+//   font-family: 'Font-OpenSans-Italic';
+//   src: url('./fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf')
+//     format('truetype');
+// }
+// .font-opensans {
+//   font-family: 'Font-OpenSans';
+// }
+
+// .font-opensans-italic {
+//   font-family: 'Font-OpenSans-Italic';
+// }

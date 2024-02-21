@@ -1,0 +1,43 @@
+@feedbackOpacity: 0.7;
+@btnSizeSm: 26px;
+@btnSizeMd: 30px;
+@btnSizeLg: 44px;
+.btnSmall() {
+  height: @btnSizeSm;
+  /* prettier-ignore */
+  font-size: 12PX;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.btnMedium() {
+  height: @btnSizeMd;
+  /* prettier-ignore */
+  font-size: 14PX;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.btnLarge() {
+  height: @btnSizeLg;
+  /* prettier-ignore */
+  font-size: 16PX;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.btnInlineCenter() {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.btnBlockCenter() {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  width: -webkit-fill-available;
+  margin: auto;
+}

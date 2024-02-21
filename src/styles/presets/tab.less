@@ -1,0 +1,106 @@
+@tab-height: 48px;
+.tz-tabs-holder {
+  position: relative;
+  // for fixed tabs
+  height: @tab-height;
+}
+.tz-tabs {
+  position: relative;
+  display: flex;
+  height: @tab-height;
+  overflow-x: auto;
+  overflow-y: hidden;
+  text-align: center;
+  &.fixed {
+    position: fixed;
+    z-index: 1000;
+    // top: 0;
+    width: 360px;
+    // left: 0;
+    background-color: white;
+  }
+  &-selectedbar {
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    /* prettier-ignore */
+    width: 12PX;
+    /* prettier-ignore */
+    height: 4PX;
+
+    background: #ffd039;
+    /* prettier-ignore */
+    border-radius:2PX;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    // opacity: 1;
+  }
+}
+@tzTabTransTime: 0.35s;
+.tz-tab {
+  position: relative;
+  z-index: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  height: @tab-height;
+  padding: 0 12px;
+  color: #c4c4c4;
+  font-weight: 700;
+  /* prettier-ignore */
+  font-size: 16PX;
+  line-height: @tab-height;
+  white-space: nowrap;
+  @inital-tab-width: 48px;
+  &:before {
+    position: absolute;
+    //
+    top: 50%;
+    left: 50%;
+
+    z-index: -1;
+
+    //
+    width: @inital-tab-width;
+    //   =
+    padding-top: @inital-tab-width / 2;
+    padding-bottom: @inital-tab-width / 2;
+    background-color: rgba(255, 245, 231, 0);
+
+    border-radius: 500px;
+
+    border-radius: 100px;
+    transform: translate(-50%, -50%);
+
+    transition: all 0s ease-in-out @tzTabTransTime;
+    transition-property: width, padding;
+    content: '';
+  }
+  &:active {
+    &:before {
+      width: 100%;
+      padding-top: 50%;
+      padding-bottom: 50%;
+      background-color: rgba(0, 0, 0, 0.2);
+      // animation:tabScale 0.3s ease-in-out;
+      transition: all @tzTabTransTime ease-in-out;
+      transition-property: width, padding;
+    }
+  }
+
+  &.selected {
+    color: #333333;
+  }
+}
+
+.tz-tab-touched {
+  &:before {
+    width: 100%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    // animation:tabScale 0.3s ease-in-out;
+    transition: all @tzTabTransTime ease-in-out;
+    transition-property: width, padding;
+  }
+}

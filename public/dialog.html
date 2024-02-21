@@ -1,0 +1,50 @@
+<%htmlWebpackPlugin.options.scripts=htmlWebpackPlugin.options.scripts || [] %>
+  <!DOCTYPE html>
+  <html lang="en-US" updated="<%= process.env.VUE_APP_ENV_BUILD_NUM %>">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="wap-font-scale" content="no">
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.meta.title%></title>  
+ 
+    <script>
+      window.pagePerfObj={loadStTime: new Date().getTime()};
+      <%= require('!!raw-loader!../src/init/boot/eruda.js').default %>;
+      console.log("verion v<%= process.env.VUE_APP_ENV_VERSION %> <%= process.env.VUE_APP_ENV_BUILD_NUM %>-<%=process.env.VUE_APP_ENV_NAME2%>");
+      var GC={
+        appName: '<%=process.env.VUE_APP_ENV_NAME2%>',
+        h5Version: '<%=process.env.VUE_APP_ENV_VERSION%>',
+        buildNum: '<%=process.env.VUE_APP_ENV_BUILD_NUM%>',
+        isDialog:true,
+        // isInApp,appVersion,isWallet boot 
+      };
+      <%= require('!!raw-loader!../src/init/boot/boot.js').default %>;
+    </script>
+    <%for (key in htmlWebpackPlugin.files.css) { %>
+      <link href="<%= htmlWebpackPlugin.files.css[key] %>" rel="stylesheet" />
+      <% } %>
+  </head>
+
+  <body style="font-family: Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+Microsoft YaHei, SimSun, sans-serif;">
+    <script src="./WebViewJavascriptBridge.js"></script>
+    <div id="app"></div>
+    <div style="position:fixed;top:0;left:0;display:none;font-size: 10px;line-height: 10px;touch-action: none;pointer-events: none;z-index: 5000" id='version'></div>
+  
+    <script>
+    <%= require('!!raw-loader!../src/init/boot/prefab.js').default %>;
+    </script>   
+     <%for (item of (htmlWebpackPlugin.files.js)) {
+       if (typeof item==='string' || item instanceof String) { 
+        item={src: item, type: 'text/javascript' } 
+       }%>
+      <script src="<%= item.src %>" rel="stylesheet"></script>
+      <% } %> 
+  </body>
+
+  </html>

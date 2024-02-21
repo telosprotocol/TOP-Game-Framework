@@ -1,0 +1,38 @@
+import type { LangInfoVPIN } from './en'
+const LANGINFO_VPIN:Partial<LangInfoVPIN> = {
+  "title": "Hasilkan Uang via Undangan",
+  "beGamePartnerTitle": "Menjadi mitra game, penghasilan 1jt + per bulan!",
+  "bindBtnText": "Input Kode Undangan",
+  "bindDlgTitle": "Mohon masukkan kode undangan",
+  "careCaseSensetive": "Perhatikan kapitalisasi huruf",
+  "bindOK": "Ikat sukses!",
+  "chatTitle": "Agent Chatroom",
+  "chat1": "Woi lo udah dapet brp duit minggu ini😁? Gue baru agen lvl1, udah dapet 500 rb mantep gak tuh😎.  ",
+  "chat2": "Idih segitu dong👍, Gw udah lvl3, tau gak minggu ini gw udah dapet lebih dr 2jt, nambah 1jt dr minggu ll🤩. ",
+  "chat3": "😲Anjir, kalian dapet cepet bgt! Gue baru naik jadi lvl 2, jml komisinya dapet gak nyangka gue🤟! Terus tau gak gue posting kode undangan di YouTube gue, hokinya banyak yg pakai, cuan deh gue🤑🤑🤑🤑.   ",
+  "chat4": " Selamet ye bro🎉! Dah komisi agen lvl3 jauh lebih gede cuy dari lvl1💸. ",
+  "chat5": "Eh kalian ada grup gak? Gue punya grup di Telegram. Tiap hari mining WSP bareng, untungnya lumayan bgt🤙🤙🤙. Mudah2an harga WSP naik deh melejit kayak bitcoin📈!  ",
+  "chat6": "Yaudeh gue mau latih bawahan gue jago, ntar kan mereka dapet duit banyak, gue juga, win2 solution, mantap🙌! ",
+  "chat7": "Kerassss, semangat! Gue juga gak mau kalah bro💪! ",
+  "incomeMethod": "Metode Pendapatan",
+  "RL": "Pendapatan RL",
+  "RTL": "Pendapatan RTL",
+  "TopupIncome": "Cashback Top-up",
+  "TeamTopup": "Top Up Tim",
+  "RLTip": "Pendapatan RL: Pendapatan yang Anda terima dari top-up dari pengguna yang diundang langsung oleh Anda.",
+  "RTLTip": "Pendapatan RTL (10W+ / bulanan): Jika bawahan Anda juga terlibat dalam undangan, Anda dapat memperoleh pendapatan tidak langsung dari kinerja mereka.",
+  "TopupIncomeTip": "Anda bisa dapat koin cashback 20% pada top-up pertama.",
+  "TeamTopupTip": "Anggota timmu terus top up, And akan terus dapat bonus Kripto WSP juga.",
+  "goToDetailText": "Undang Teman Dapatkan {0}",
+  "goToDetailValue": "Rp27k",
+  "s1Title": "Pendapatan RL",
+  "s1p1": "RL adalah singkatan dari rekomendasi langsung atau alias teman yang Anda undang langsung tanpa perantara.",
+  "s1p2": "Anda bisa dapat komisi dari setiap top up RL yang Anda undang. Besar komisi berbeda sesuai status level anda, yaitu sebagai berikut :",
+  "s2Title": "Pendapatan RTL (10jt+ / Bulan)",
+  "s2p1": "RTL adalah singkatan dari rekomendasi tidak langsung atau alias teman Anda juga mengundang orang lain. Anda juga akan mendapat komisi dari orang yang mereka undang. Besar komisi yang Anda dapatkan berbeda sesuai status level Anda, yaitu sebagai berikut :",
+  "s2p2": "Anda bisa dapat komisi dari setiap top up RTL yang teman Anda undang. Besar komisi berbeda sesuai status level anda, yaitu sebagai berikut :",
+  "s3Title": "Cashback Top Up Pertama",
+  "s3p1": "Anda bisa mendapatkan cashback sebesar 20% untuk top up pertama."
+}
+
+export default LANGINFO_VPIN

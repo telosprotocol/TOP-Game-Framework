@@ -1,0 +1,25 @@
+.img-bg-base(@width;@height) {
+  width: @width;
+  height: @height;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.img-bg(@width;@height;@src) {
+  .img-bg-base(@width, @height);
+  background-image: @src;
+}
+
+.img-bg-base-v(@width;@height) {
+  width: @width;
+  height: @height;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+}
+/*
+*        ，    
+*/
+.img-bg-v(@width;@height;@src) {
+  .img-bg-base-v(@width,@height);
+  background-image: @src;
+}

@@ -1,0 +1,82 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "strict": true,
+    "allowJs": true,
+    "module": "esnext",
+    "moduleResolution": "Node",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false,
+    "jsx": "preserve",
+    "noEmit": true,
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "importsNotUsedAsValues": "error",
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "isolatedModules": false,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "baseUrl": "./",
+    "types": [
+      "@types/jest",
+      "webpack-env"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "typeRoots": [
+      "./node_modules/vue/types",
+      "./node_modules/@types/",
+      "./node_modules/vue-i18n/types",
+      "./types/",
+      "./types/api.d.ts",
+    ],
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
+    "src/**/*.d.ts",
+    "types/api.d.ts",
+    "types/extend.d.ts",
+    "types/main.d.ts",
+    "types/global.d.ts",
+    "types/sfc.d.ts",
+    "types/vantLang.d.ts",
+    "types/qrcode.d.ts",
+    "types/shims-vue.d.ts",
+    "types/img.d.ts",
+    "src/vservices/client/typings.d.ts",
+    "src/vservices/restful/typings.d.ts",
+    "src/vservices/common/typings.d.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "local",
+    "dist",
+    "public_online",
+    "./src/libs"
+  ],
+  "vueCompilerOptions": {
+    "extensions": [
+      ".vue"
+    ],
+    "target": 2
+  }
+}

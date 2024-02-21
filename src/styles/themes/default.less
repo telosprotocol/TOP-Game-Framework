@@ -1,0 +1,110 @@
+@white: #fff;
+@black: #000;
+
+@feedbackColor: rgba(0, 0, 0, 0.05);
+
+@primaryColor: #ffd039; //    (  )
+@linkColor: #4fb6ff;
+@successColor: #73d26c;
+@warningColor: #fb4e20;
+@primaryTextColor: #f7bf0a; //
+
+//
+@gray1Color: #333;
+@gray2Color: #666;
+@gray3Color: #999;
+@gray4Color: #bbb;
+@gray5Color: #ddd;
+@gray6Color: #f6f6f6;
+
+// font
+@font-size-title: 16px;
+/* prettier-ignore */
+@font-size-lg:16PX;
+/* prettier-ignore */
+@font-size-base:14PX;
+/* prettier-ignore */
+@font-size-md:14PX;
+/* prettier-ignore */
+@font-size-sm:12PX;
+/* prettier-ignore */
+@font-size-xs: 10PX;
+
+@font-weight-bold: 500;
+/* prettier-ignore */
+@line-height-xs: 14PX;
+/* prettier-ignore */
+@line-height-sm: 18PX;
+/* prettier-ignore */
+@line-height-md: 20PX;
+/* prettier-ignore */
+@line-height-lg: 22PX;
+
+// Padding
+/* prettier-ignore */
+@padding-base: 4PX;
+/* prettier-ignore */
+@padding-xs: 8PX;
+/* prettier-ignore */
+@padding-sm: 12PX;
+/* prettier-ignore */
+@padding-md: 16PX;
+/* prettier-ignore */
+@padding-lg: 24PX;
+/* prettier-ignore */
+@padding-xl: 32PX;
+
+@text-color-title: #333;
+@text-color: fade(@black, 85%);
+@text-color-secondary: fade(@black, 45%);
+
+@font-variant-base: tabular-nums;
+@font-feature-settings-base: 'tnum';
+
+@line-height-base: 1.4;
+
+// Animation
+@animation-duration-base: 0.2s;
+
+// vertical paddings
+@padding-lg: 24px; // containers
+@padding-md: 16px; // small containers and buttons
+@padding-sm: 12px; // Form controls and items
+@padding-xs: 8px; // small items
+@padding-xss: 4px; // more small
+
+// height rules
+@height-base: 32px;
+@height-lg: 40px;
+@height-sm: 24px;
+
+// Border color
+@border-color-base: hsv(0, 0, 85%); // base border outline a component
+@border-color-split: hsv(0, 0, 94%); // split border inside a component
+@border-color-inverse: @white;
+@border-width-base: 1px; // width of the border for a component
+@border-style-base: solid; // style of a components border
+
+// Shadow
+@shadow-color: rgba(0, 0, 0, 0.15);
+// @shadow-color-inverse: @component-background;
+// @box-shadow-base: @shadow-2;
+@shadow-1-up: 0 -6px 16px -8px rgba(0, 0, 0, 0.08),
+  0 -9px 28px 0 rgba(0, 0, 0, 0.05), 0 -12px 48px 16px rgba(0, 0, 0, 0.03);
+@shadow-1-down: 0 6px 16px -8px rgba(0, 0, 0, 0.08),
+  0 9px 28px 0 rgba(0, 0, 0, 0.05), 0 12px 48px 16px rgba(0, 0, 0, 0.03);
+@shadow-1-left: -6px 0 16px -8px rgba(0, 0, 0, 0.08),
+  -9px 0 28px 0 rgba(0, 0, 0, 0.05), -12px 0 48px 16px rgba(0, 0, 0, 0.03);
+@shadow-1-right: 6px 0 16px -8px rgba(0, 0, 0, 0.08),
+  9px 0 28px 0 rgba(0, 0, 0, 0.05), 12px 0 48px 16px rgba(0, 0, 0, 0.03);
+@shadow-2: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+  0 9px 28px 8px rgba(0, 0, 0, 0.05);
+
+@import './_header-top.less';
+
+/* zIndex    */
+@index-dialog: 1000;
+
+@index-nav: 20;
+@index-nav-higher: @index-nav + 5;
+@index-nav-lower: @index-nav -5;

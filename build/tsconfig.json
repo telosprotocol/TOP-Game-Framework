@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "strict": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "outDir": "../dist.ts",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "types": [
+      "node",
+      "webpack-env"
+    ],
+    "isolatedModules": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "../types",
+      "../node_modules/vue/types"
+    ],
+    "baseUrl": "../",
+    "paths": {
+      "@/*": [
+        "../src/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "../src/locals/**/*.ts",
+    "../build-src/**/*.ts",
+    "**/*.png",
+    "lang2excel.ts"
+  ],
+  "exclude": [
+    "../node_modules",
+    "../local",
+    "../dist",
+    "../public_online",
+    "./src/libs"
+  ]
+}

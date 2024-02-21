@@ -1,0 +1,21 @@
+*,
+::before,
+::after {
+  --tz-v-placeholder-color: inherit;
+  --tz-v-placeholder-size: inherit;
+  --tz-v-placeholder-weight: inherit;
+  --tz-v-placeholder-line-height: inherit;
+  --tz-v-placeholder-y: 0;
+}
+
+.vplaceholder::placeholder,
+.vplaceholder::-webkit-input-placeholder {
+  position: relative;
+  color: var(--tz-v-placeholder-color);
+  font-size: var(--tz-v-placeholder-size);
+  font-weight: var(--tz-v-placeholder-weight);
+  line-height: var(--tz-v-placeholder-line-height) !important;
+  top: var(--tz-v-placeholder-y);
+  // vertical-align: middle;
+  // height: var(--tz-v-placeholder-line-height);
+}

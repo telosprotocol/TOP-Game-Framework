@@ -1,0 +1,38 @@
+
+const LANGINFO_VPIN = {
+  "title": "Earn Money by Referrals",
+  "beGamePartnerTitle": "Become a game partner, earning 1mil + per month! ",
+  "bindBtnText": "Enter Invitation Code",
+  "bindDlgTitle": "Please enter Invitation Code",
+  "careCaseSensetive": "Make sure the case-sensetive",
+  "bindOK": "Binding success!",
+  "chatTitle": "Agent Chatroom ",
+  "chat1": "Hey, how much have you made this week😁? I'm just a level 1 agent and I've already earned 500k, not bad, right😎? \r\n",
+  "chat2": "Oh, that's all ? I'm already level 3, you know? This week I've made over 2M, an extra 1M from last week🤩.",
+  "chat3": "😲OMG, you are making mad cash! I just leveled up to agent level 2, the commissions are really good, I can't believe it🤟! I posted my referral code on YouTube, so manya people use it, making crazy cash🤑🤑🤑!",
+  "chat4": "Congratulations, bro 🎉! lvl 3 commission it's way bigger than lvl 1💸.",
+  "chat5": "Hey, have any joined the group? I have a Telegram group. We mine WSP together every day, and the profits are pretty sweet🤙🤙🤙. Hoping price of WSP will skyrocket like Bitcoin📈! \r\n",
+  "chat6": "Yes, bro! Alright, I'm gonna train my team members to be masters, so when they make bank, I make bank too. Win-win, baby🙌!",
+  "chat7": "Coool, I won't be left behind, bro💪!",
+  "incomeMethod": "Revenue Method",
+  "RL": "Revenue DR",
+  "RTL": "Revenue IR",
+  "TopupIncome": "Recharge cashback",
+  "TeamTopup": "Team Recharge",
+  "RLTip": "Direct Rec. Earning: The revenue you receive from recharge from users directly invited by you.",
+  "RTLTip": "Indirect Rec. Earning (10W+ / monthly): If your subordinates also participate in invitations, you can earn indirect earning from their performance.",
+  "TopupIncomeTip": "You can get a 20% coin cashback on your first recharge",
+  "TeamTopupTip": "Your team members keep topping up and you will continue to receive bonus in WSP cryptocurrency",
+  "goToDetailText": "Invite Friends get {0}",
+  "goToDetailValue": "Rp27k",
+  "s1Title": "DR Revenue",
+  "s1p1": "DR stands for direct recommendation, friends you invite directly without intermediaries.",
+  "s1p2": "You can get a commission from every DR recharge top up you invite. The amount of commission differs according to your level, which is as follows:",
+  "s2Title": "IR Revenue (10m+ / Month)",
+  "s2p1": "IR stands for indirect recommendation, your friends also invite other people. You will also get a commission from the people they invite. The amount of commission you get is different according to your level, which is as follows:",
+  "s2p2": "You can get a commission from every DR top up that your friend invites. The amount of commission differs according to your level, as follows:",
+  "s3Title": "First Recharge Cashback",
+  "s3p1": "You can get 20% cashback from the first top up."
+}
+export type LangInfoVPIN = typeof LANGINFO_VPIN
+export default LANGINFO_VPIN
